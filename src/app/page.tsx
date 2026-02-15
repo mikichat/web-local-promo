@@ -29,12 +29,40 @@ const PortalPage = () => {
       url: 'https://web-gimbap.pages.dev',
       icon: '🍙',
       color: 'bg-yellow-500'
+    },
+    {
+      name: '클로 카페',
+      description: '향긋한 커피와 달콤한 디저트가 있는 도심 속 휴식처.',
+      url: 'https://web-cafe.pages.dev',
+      icon: '☕',
+      color: 'bg-amber-600'
+    },
+    {
+      name: '불타는 치킨',
+      description: '겉바속촉의 정석, 신선한 닭으로 튀긴 최고의 치킨.',
+      url: 'https://web-chicken.pages.dev',
+      icon: '🍗',
+      color: 'bg-red-500'
+    },
+    {
+      name: '클로 헤어샵',
+      description: '당신의 스타일을 완성하는 트렌디한 헤어 스타일링.',
+      url: 'https://web-hair.pages.dev',
+      icon: '✂️',
+      color: 'bg-pink-400'
+    },
+    {
+      name: '광속 세차장',
+      description: '전문가의 손길로 내 차를 새 차처럼 깨끗하게.',
+      url: 'https://web-carwash.pages.dev',
+      icon: '🚿',
+      color: 'bg-cyan-500'
     }
   ];
 
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 font-sans">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">우리 동네 홍보 포털</h1>
@@ -42,7 +70,7 @@ const PortalPage = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {sites.map((site) => (
             <a 
               key={site.url} 
@@ -51,15 +79,15 @@ const PortalPage = () => {
               rel="noopener noreferrer"
               className="group block bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
             >
-              <div className="p-8">
-                <div className={`w-16 h-16 ${site.color} rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform`}>
+              <div className="p-6">
+                <div className={`w-14 h-14 ${site.color} rounded-2xl flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition-transform text-white shadow-inner`}>
                   {site.icon}
                 </div>
-                <h2 className="text-2xl font-bold text-gray-900 mb-2">{site.name}</h2>
-                <p className="text-gray-600 mb-6">{site.description}</p>
-                <div className="flex items-center text-blue-600 font-semibold">
+                <h2 className="text-xl font-bold text-gray-900 mb-2">{site.name}</h2>
+                <p className="text-sm text-gray-600 mb-6 line-clamp-2">{site.description}</p>
+                <div className="flex items-center text-blue-600 font-semibold text-sm">
                   사이트 방문하기
-                  <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </div>
