@@ -3,6 +3,97 @@ import React from 'react';
 const PortalPage = () => {
   const sites = [
     {
+      name: '댄스 학원',
+      description: '열정이 빛나는 공간',
+      url: 'https://web-dance.pages.dev',
+      icon: '💃',
+      color: 'bg-purple-600'
+    },
+    {
+      name: '태권도장',
+      description: '몸과 마음을 단련하는 공간',
+      url: 'https://web-tkd.pages.dev',
+      icon: '🥋',
+      color: 'bg-blue-700'
+    },
+    {
+      name: '미술 학원',
+      description: '창의력이 피어나는 공간',
+      url: 'https://web-art.pages.dev',
+      icon: '🎨',
+      color: 'bg-pink-500'
+    },
+    {
+      name: '피아노 학원',
+      description: '감성을 연주하는 공간',
+      url: 'https://web-piano.pages.dev',
+      icon: '🎹',
+      color: 'bg-stone-800'
+    },
+    {
+      name: '아동 발달 센터',
+      description: '우리 아이의 행복한 성장',
+      url: 'https://web-childcare.pages.dev',
+      icon: '👶',
+      color: 'bg-rose-400'
+    },
+    {
+      name: '심리상담소',
+      description: '당신의 마음을 어루만지는 따뜻한 심리 상담 공간',
+      url: 'https://web-counseling.pages.dev',
+      icon: '🧠',
+      color: 'bg-purple-500'
+    },
+    {
+      name: '임대 관리 서비스',
+      description: '공실 걱정 없는 스마트한 임대 관리 서비스',
+      url: 'https://web-rentcare.pages.dev',
+      icon: '🔑',
+      color: 'bg-teal-600'
+    },
+    {
+      name: '분양 대행사',
+      description: '전국 아파트/상가 분양 상담 및 컨설팅 전문 대행사',
+      url: 'https://web-presale.pages.dev',
+      icon: '🏗️',
+      color: 'bg-yellow-600'
+    },
+    {
+      name: '공인중개사',
+      description: '신뢰와 정직의 공인중개사 - 당신의 꿈의 집을 찾아드립니다.',
+      url: 'https://web-realty.pages.dev',
+      icon: '🏠',
+      color: 'bg-orange-600'
+    },
+    {
+      name: '회계사 사무소 (신회계사)',
+      description: '기업의 가치를 높이는 투명한 회계 및 감사 서비스',
+      url: 'https://web-accounting.pages.dev',
+      icon: '📊',
+      color: 'bg-blue-900'
+    },
+    {
+      name: '세무사 박세무 회계소',
+      description: '꼼꼼한 세무 관리로 절세의 길을 찾아드립니다',
+      url: 'https://web-tax.pages.dev',
+      icon: '💰',
+      color: 'bg-green-600'
+    },
+    {
+      name: '법무사 이법무 사무소',
+      description: '빠르고 정확한 등기 및 법률 사무 서비스',
+      url: 'https://web-legal.pages.dev',
+      icon: '📜',
+      color: 'bg-indigo-700'
+    },
+    {
+      name: '변호사 김변호 법률사무소',
+      description: '정직과 신뢰로 보답하는 법률 파트너',
+      url: 'https://web-lawyer.pages.dev',
+      icon: '⚖️',
+      color: 'bg-slate-800'
+    },
+    {
       name: '클로 세탁소',
       description: '깨끗함의 시작, 소중한 옷을 새 옷처럼 관리해 드립니다.',
       url: 'https://web-laundry.pages.dev',
