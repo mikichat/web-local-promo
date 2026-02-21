@@ -1,11 +1,15 @@
 'use client';
 
 import React, { useRef } from 'react';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, MeshProps } from '@react-three/fiber';
 import { Float, Environment, ContactShadows, PresentationControls } from '@react-three/drei';
 import * as THREE from 'three';
 
-function FloatingShape(props: any) {
+interface ShapeProps extends MeshProps {
+  color: string;
+}
+
+function FloatingShape(props: ShapeProps) {
   const meshRef = useRef<THREE.Mesh>(null!);
   
   useFrame((state, delta) => {
@@ -29,7 +33,7 @@ function FloatingShape(props: any) {
   );
 }
 
-function SphereShape(props: any) {
+function SphereShape(props: ShapeProps) {
   const meshRef = useRef<THREE.Mesh>(null!);
   
   useFrame((state, delta) => {

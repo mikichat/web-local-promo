@@ -171,13 +171,13 @@ const PortalPage = () => {
             Local Business Portal
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 font-light tracking-wide">
-            Explore <span className="font-bold text-white">Claw's</span> Network of Premium Services
+            Explore <span className="font-bold text-white">Claw&apos;s</span> Network of Premium Services
           </p>
         </header>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {sites.map((site, idx) => (
+          {sites.map((site) => (
             <a 
               key={site.url} 
               href={site.url} 
